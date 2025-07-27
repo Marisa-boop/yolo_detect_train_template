@@ -132,12 +132,7 @@ test: test/images    # 测试集图像相对路径
 
 # 类别名称
 names:
-  0: "0"
-  1: "1"
-  2: "2"
-  3: "3"
-  4: "4"
-  5: "5"
+  0: "laser_red"
 """
 
     config_path = os.path.join(output_dir, "data/data.yaml")
