@@ -76,10 +76,7 @@ def convert_segment_masks_to_yolo_det(masks_dir, output_dir, classes):
                     # 写入标签文件
                     # 注意：这里的类别ID假设实例ID就是类别ID（通常需要根据实际情况调整）
                     class_id = instance_id - 1  # 因为YOLO类别ID从0开始
-                    f.write(
-                        f"{class_id} {x_center} {y_center} {
-                            bbox_width} {bbox_height}\n"
-                    )
+                    f.write(f"{class_id} {x_center} {y_center} {bbox_width} {bbox_height}\n")
 
         print(f"生成检测标签: {mask_file} → {label_file}")
 
